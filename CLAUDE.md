@@ -17,7 +17,7 @@ Gmail do Claude** (capability `mcp`) e usa o próprio Claude para IA (capability
 
 ## Leitura obrigatória antes de mexer
 
-1. Este arquivo.
+1. Este arquivo e o [STATUS.md](STATUS.md) — **retomar de onde parou** (item 🔄/⬜).
 2. O plano da tarefa em `docs/` (ex.: `docs/painel-organizar-com-ia-e-acoes.md`).
 3. Antes de escrever código do artefato: skill `artifact-capabilities` (tipos em `mcp.d.ts` e
    `sample.d.ts`) — a forma das chamadas vem de lá, nunca da memória.
