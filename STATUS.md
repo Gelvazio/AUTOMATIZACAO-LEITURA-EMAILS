@@ -1,10 +1,23 @@
 # STATUS — Caixa Gmail ao Vivo
 
-Andamento do projeto por etapas. Cada item é atualizado assim que é finalizado.
+**Objetivo:** Ler, organizar e agir nos e-mails do Gmail num painel do claude.ai (conector Gmail +
+IA do Claude), atualizado a cada 2 horas, para ganhar tempo na caixa de entrada.
+**Partes interessadas:** Gelvazio (decide, aprova e usa) · Claude (executa)
+**Links:** [Regras](CLAUDE.md) · [Planos](docs/) ·
+[Artefato](https://claude.ai/artifact/6EVFxPcah16vM46FLGCG6g)
+**Próximo passo:** aguardando o "sim" do usuário para executar a Etapa 3 (item 3.1).
+
 Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 
-**Artefato:** https://claude.ai/artifact/6EVFxPcah16vM46FLGCG6g
-**Regras:** [CLAUDE.md](CLAUDE.md) · **Planos:** [docs/](docs/)
+## Escopo
+
+- **Entra:** leitura, filtros, ações A1–A11 (lido, estrela, importante, marcadores, spam, arquivar,
+  lixeira), organização com IA C1–C6, atualização automática de 2 h.
+- **Não entra:** enviar e-mail, apagar definitivamente, atualização com a página fechada, WhatsApp.
+- **Critério de pronto:** sintaxe validada (`node --check`), artefato republicado no mesmo link e
+  testado pelo usuário no claude.ai.
+- **Premissas e restrições:** conector Gmail conectado; não abrir navegador para validar; não
+  escrever testes; arquivos ≤ 1000 linhas e funções ≤ 45 linhas.
 
 ---
 
@@ -27,6 +40,7 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 2.1 | Plano `docs/painel-organizar-com-ia-e-acoes.md` | ✅ Concluído | 2026-10-03 17:55 |
 | 2.2 | `CLAUDE.md` do projeto com as regras A, B, C, D | ✅ Concluído | 2026-10-03 18:05 |
 | 2.3 | `STATUS.md` (este arquivo) | ✅ Concluído | 2026-10-03 18:10 |
+| 2.4 | Regras de gestão de projetos no CLAUDE.md global + STATUS.md no modelo | ✅ Concluído | 2026-10-03 18:18 |
 
 ## Etapa 3 — Estrutura do código
 
@@ -77,3 +91,47 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 | 7.3 | README atualizado | ⬜ Pendente | — |
 | 7.4 | Commit + graphify | ⬜ Pendente | — |
 | 7.5 | Teste no claude.ai pelo usuário | ⬜ Pendente | — |
+
+---
+
+## Riscos
+
+| Risco | Chance | Impacto | Plano B | Situação |
+|-------|--------|---------|---------|----------|
+| Ações alteram o Gmail de verdade | Média | Alto | Confirmação para spam/lixeira/lote > 10 + Desfazer | Aberto |
+| Conector Gmail desconectar | Média | Alto | Aviso "Reconecte o Gmail" no painel | Ocorreu em 2026-10-03, resolvido |
+| Falha no meio de um lote | Baixa | Médio | Relatar feitos/falhos, sem repetir escrita sozinho | Aberto |
+| IA classificar errado | Média | Baixo | IA só sugere; usuário decide | Aberto |
+| Módulos JS em arquivos separados não carregarem | Baixa | Alto | `node --check` + teste do usuário; voltar a arquivo único | Aberto |
+
+## Bloqueios
+
+| Data | Item | Motivo | O que destrava | Resolvido em |
+|------|------|--------|----------------|--------------|
+| 2026-10-03 | 1.1 | Conector Gmail com conexão invalidada | Usuário reconectar no claude.ai | 2026-10-03 |
+
+## Registro de decisões
+
+| Data | Decisão | Quem | Por quê |
+|------|---------|------|---------|
+| 2026-10-03 | Usar Artefato + conector Gmail do Claude (sem servidor) | Gelvazio | Pedido do usuário |
+| 2026-10-03 | Mostrar todos os e-mails, 50 por página | Gelvazio | Pedido do usuário |
+| 2026-10-03 | Botão Resumir com IA só ao clicar | Gelvazio | Evitar gasto de uso |
+| 2026-10-03 | Plano da Etapa 1 aprovado | Gelvazio | Respondeu "SIM" |
+| 2026-10-03 | Acrescentar ações A1–A11 e IA C1–C6, uma ação por botão | Gelvazio | Pedido do usuário |
+| 2026-10-03 | Dividir o código em CSS + módulos JS | Claude | Passaria de 1000 linhas |
+
+## Pendências (ficou para depois)
+
+| Item | Motivo | Quando retomar |
+|------|--------|----------------|
+| Rascunho de resposta com IA | Não pedido nesta fase | Quando o usuário pedir |
+| Integração com Google Agenda | Não pedido nesta fase | Quando o usuário pedir |
+| Aviso pelo WhatsApp / atualização com página fechada | Exige automação fora do artefato | Projeto AUTOMATIZACAO-WHATSAPP |
+
+## Lições aprendidas
+
+| Data | O que aconteceu | Lição / nova regra |
+|------|-----------------|--------------------|
+| 2026-10-03 | Sessão poderia cair no meio da tarefa | Regra global: `STATUS.md` em toda tarefa, retomar de onde parou |
+| 2026-10-03 | Faltavam decisões, riscos e lições no acompanhamento | Regra global: modelo de gestão de projetos no `STATUS.md` |
