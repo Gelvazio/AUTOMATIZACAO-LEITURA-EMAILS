@@ -24,6 +24,33 @@ Gmail do Claude** (capability `mcp`) e usa o próprio Claude para IA (capability
 
 ---
 
+## 🚨 REGRA CRÍTICA — `STATUS.md` EM TODA TAREFA (RETOMADA APÓS QUEDA DE SESSÃO)
+
+Registrada em 2026-10-03 (também no `CLAUDE.md` global). Vale para **qualquer tipo de tarefa**.
+
+**Por quê:** se a sessão cair, ao voltar (ou se **outra IA** retomar) o trabalho deve
+**continuar exatamente de onde parou**, sem refazer nem pular nada.
+
+### Obrigatório
+
+1. ✅ Toda tarefa tem registro no [STATUS.md](STATUS.md) da raiz do projeto.
+2. ✅ Trabalho dividido em **etapas** (`## Etapa N — nome`) e **itens numerados** (`N.1`, `N.2`…),
+   em tabela: `Item | Descrição | Status | Concluído em`.
+3. ✅ Status: `⬜ Pendente` · `🔄 Em progresso` · `✅ Concluído` · `⛔ Bloqueado` (com o motivo).
+4. ✅ **Atualizar o `STATUS.md` imediatamente** ao iniciar (🔄) e ao finalizar (✅, com data e hora)
+   **cada item** — não acumular para o fim.
+5. ✅ Tarefas novas **acrescentam etapas** ao fim do arquivo (nunca apagar o histórico).
+6. ✅ Vale também para tarefas pequenas.
+
+### Ao iniciar ou retomar uma sessão
+
+1. ✅ **Ler o `STATUS.md`** antes de qualquer ação.
+2. ✅ Havendo item `🔄` ou `⬜` de tarefa aprovada: **conferir o que já foi feito** nos arquivos e
+   commits e **prosseguir de onde parou**.
+3. ❌ Não recomeçar do zero, não refazer itens `✅`, não pular itens.
+
+---
+
 ## 📜 Regras do painel — uma ação por botão
 
 ### A. Agir nos e-mails (alteram o Gmail)
