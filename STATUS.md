@@ -46,51 +46,51 @@ Legenda: ⬜ Pendente · 🔄 Em progresso · ✅ Concluído · ⛔ Bloqueado
 
 | Item | Descrição | Status | Concluído em |
 |------|-----------|--------|--------------|
-| 3.1 | Separar CSS em `artefato/estilos.css` | ⬜ Pendente | — |
-| 3.2 | Constantes em `artefato/js/constantes.js` | ⬜ Pendente | — |
-| 3.3 | Repositório Gmail `artefato/js/gmail-repositorio.js` | ⬜ Pendente | — |
-| 3.4 | Estado + seleção `artefato/js/estado.js` | ⬜ Pendente | — |
+| 3.1 | Separar CSS em `artefato/estilos.css` · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 3.2 | Constantes em `artefato/js/constantes.js` · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 3.3 | Repositório Gmail `artefato/js/gmail-repositorio.js` · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 3.4 | Estado + seleção `artefato/js/estado.js` · `MEDIO · effort medium` | ⬜ Pendente | — |
 
 ## Etapa 4 — Agir nos e-mails (A1–A11)
 
 | Item | Descrição | Status | Concluído em |
 |------|-----------|--------|--------------|
-| 4.1 | Seleção múltipla (caixas, Selecionar todos, Limpar) | ⬜ Pendente | — |
-| 4.2 | A1/A2 Lido / Não lido | ⬜ Pendente | — |
-| 4.3 | A3 Estrela · A4 Importante | ⬜ Pendente | — |
-| 4.4 | A5/A6 Aplicar / Remover marcador · A7 Criar marcador | ⬜ Pendente | — |
-| 4.5 | A8/A9 Spam / Não é spam (com confirmação) | ⬜ Pendente | — |
-| 4.6 | A10 Arquivar · A11 Lixeira (com confirmação) | ⬜ Pendente | — |
-| 4.7 | Confirmação na página + progresso + Desfazer | ⬜ Pendente | — |
+| 4.1 | Seleção múltipla (caixas, Selecionar todos, Limpar) · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 4.2 | A1/A2 Lido / Não lido · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 4.3 | A3 Estrela · A4 Importante · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 4.4 | A5/A6 Aplicar / Remover marcador · A7 Criar marcador · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 4.5 | A8/A9 Spam / Não é spam (com confirmação) · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 4.6 | A10 Arquivar · A11 Lixeira (com confirmação) · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 4.7 | Confirmação na página + progresso + Desfazer · `MEDIO · effort medium` | ⬜ Pendente | — |
 
 ## Etapa 5 — Filtros (B1–B9)
 
 | Item | Descrição | Status | Concluído em |
 |------|-----------|--------|--------------|
-| 5.1 | Com estrela · Caixa de entrada · Spam | ⬜ Pendente | — |
-| 5.2 | Por marcador | ⬜ Pendente | — |
-| 5.3 | Por categoria da IA | ⬜ Pendente | — |
+| 5.1 | Com estrela · Caixa de entrada · Spam · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 5.2 | Por marcador · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 5.3 | Por categoria da IA · `MEDIO · effort medium` | ⬜ Pendente | — |
 
 ## Etapa 6 — Organizar com IA (C1–C6)
 
 | Item | Descrição | Status | Concluído em |
 |------|-----------|--------|--------------|
-| 6.1 | C1 Classificar | ⬜ Pendente | — |
-| 6.2 | C2 Sugerir marcadores (+ Aplicar / Aplicar todas) | ⬜ Pendente | — |
-| 6.3 | C3 Limpeza em massa | ⬜ Pendente | — |
-| 6.4 | C4 Resumir conversa | ⬜ Pendente | — |
-| 6.5 | C5 Extrair dados | ⬜ Pendente | — |
-| 6.6 | C6 Resumir (migrado para o painel de IA) | ⬜ Pendente | — |
+| 6.1 | C1 Classificar · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 6.2 | C2 Sugerir marcadores (+ Aplicar / Aplicar todas) · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 6.3 | C3 Limpeza em massa · `PESADO · effort high` | ⬜ Pendente | — |
+| 6.4 | C4 Resumir conversa · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 6.5 | C5 Extrair dados · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 6.6 | C6 Resumir (migrado para o painel de IA) · `MEDIO · effort medium` | ⬜ Pendente | — |
 
 ## Etapa 7 — Entrega
 
 | Item | Descrição | Status | Concluído em |
 |------|-----------|--------|--------------|
-| 7.1 | `node --check` em todos os módulos | ⬜ Pendente | — |
-| 7.2 | Republicar no mesmo link (manifesto com novas ferramentas) | ⬜ Pendente | — |
-| 7.3 | README atualizado | ⬜ Pendente | — |
-| 7.4 | Commit + graphify | ⬜ Pendente | — |
-| 7.5 | Teste no claude.ai pelo usuário | ⬜ Pendente | — |
+| 7.1 | `node --check` em todos os módulos · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 7.2 | Republicar no mesmo link (manifesto com novas ferramentas) · `MEDIO · effort medium` | ⬜ Pendente | — |
+| 7.3 | README atualizado · `LEVE · effort low` | ⬜ Pendente | — |
+| 7.4 | Commit + graphify · `LEVE · effort low` | ⬜ Pendente | — |
+| 7.5 | Teste no claude.ai pelo usuário · `LEVE · effort low` | ⬜ Pendente | — |
 
 ---
 
