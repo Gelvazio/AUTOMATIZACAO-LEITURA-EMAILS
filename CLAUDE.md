@@ -1,5 +1,12 @@
 # CLAUDE.md — AUTOMATIZACAO-LEITURA-EMAILS
 
+<!-- rules-ai:global -->
+> 🌐 **Regras globais:** além das regras deste arquivo, valem as regras globais de
+> `C:ontesules-ai` (`regras/*.md`, entregues a cada IA pelo arquivo global dela). Em divergência,
+> a regra deste projeto prevalece, e o usuário decide o que fazer com cada divergência
+> (`rules-ai/CONFLITOS.md`). Ao finalizar uma tarefa: commit + push.
+
+
 Instruções do projeto. Têm precedência máxima sobre o `CLAUDE.md` global
 (`C:\Users\gelva\.claude\CLAUDE.md`), que continua valendo no que não for contrariado aqui.
 
